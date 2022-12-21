@@ -11,8 +11,18 @@
       <li>Pandas</li>
       <li>NLTK</li>
     </ul>
-    <h2>Data</h2>
-    <p>The IMDB movie review dataset is included in this repository. It consists of 50,000 movie reviews, evenly split between positive and negative sentiments. The dataset has already been preprocessed, with punctuation and stop words removed, the reviews converted to lower case, and lemmatization applied. The reviews were then encoded as sequences of integers. The data was split into training, validation, and test sets, with the training set being used to train the model and the validation and test sets being used for evaluation.</p>
+  
+  <h2>Data</h2>
+    <p>The IMDB movie review dataset is included in this repository. It consists of 50,000 movie reviews, evenly split between positive and negative sentiments. The data was preprocessed using the following steps:</p>
+    <ul>
+      <li>Links were removed</li>
+      <li>HTML tags were removed</li>
+      <li>Numbers, punctuations, and non-letter characters were removed</li>
+      <li>Text was converted to lower case</li>
+      <li>Lemmatization was applied</li>
+      <li>The reviews were encoded as sequences of integers</li>
+    </ul>
+    <p>The preprocessed data was then split into training, validation, and test sets, with the training set being used to train the model and the validation and test sets being used for evaluation.</p>
     <h2>Model</h2>
     <pThe model used in this project is a neural network with an embedding layer and LSTM (long short-term memory). It takes in integer-encoded reviews and produces a prediction of the sentiment (positive or negative). The model achieved a test accuracy of 79% on the IMDB movie review dataset.The model was saved as </p>
     <h2>Predictions</h2>
